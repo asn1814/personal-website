@@ -1,0 +1,77 @@
+import React from 'react';
+import styled from 'styled-components';
+import { THEME_COLORS } from '../utils/theme.ts';
+import pfp from '../assets/pfp.jpeg';
+
+const Container = styled.div`
+  position: relative;
+  height: fit-content;
+  max-width: 500px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  color: ${THEME_COLORS.brandWhite};
+  margin: 15px;
+  text-align: center;
+`;
+
+const Text = styled.div`
+  font-size: 14px;
+  font-style: italic;
+`;
+
+const HeadshotContainer = styled.div`
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+`;
+
+const HeadshotImage = styled.img`
+  border-radius: 100px;
+  border: 0;
+  max-height: 40px;
+  vertical-align: middle;
+  transition: max-height 0.3s ease-in-out;
+  &:hover {
+    max-height: 200px;
+  }
+`;
+
+const Headshot = ({ imageSource }: { imageSource: string; }) => {
+  return (
+    <HeadshotContainer>
+      <HeadshotImage
+        src={imageSource}
+        loading="eager"
+      ></HeadshotImage>
+    </HeadshotContainer>
+  );
+};
+
+export const Footer = () => {
+  return (
+    <>
+      <Container>
+        <Headshot imageSource={pfp} />
+        <Text>I can even deploy a website!</Text>
+      </Container>
+    </>
+  );
+};

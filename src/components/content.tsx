@@ -4,11 +4,12 @@ import { THEME_COLORS } from '../utils/theme.ts';
 
 const InlineLink = styled.a`
   color: ${THEME_COLORS.brandWhite};
-  text-decoration: none;
+  text-decoration: underline transparent 1px;
   background-color: transparent;
   font-style: italic;
+  transition: text-decoration 0.3s ease;
   &:hover {
-    text-decoration: underline;
+    text-decoration: underline solid 1px;
   }
 `;
 
@@ -18,7 +19,7 @@ export const Content = () => {
         <p>
           Executive Director at <InlineLink href="https://www.dubhacks.co" target="_blank">DubHacks</InlineLink>. 
           Research Assistant at the UW Allen School <InlineLink href="https://netlab.cs.washington.edu/" target="_blank">Mobile Intelligence Lab</InlineLink>.
-          SWE Intern at <InlineLink href="https://about.meta.com" target="_blank">Meta</InlineLink>. 
+          Software Engineer Intern at <InlineLink href="https://about.meta.com" target="_blank">Meta</InlineLink>. 
         </p>
         <p>
           Seattle native. 

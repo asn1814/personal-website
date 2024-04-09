@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { THEME_COLORS } from '../utils/theme.ts';
 
 const Container = styled.div`
+  padding: 20px 0px 0px;
   margin-right: 20px;
   margin-left: 20px;
   width: 100%;
@@ -11,7 +12,6 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: space-around;
   margin: 0px auto;
-  font-size: 12px;
 `;
 
 const InlineLink = styled.a`
@@ -27,12 +27,12 @@ const InlineLink = styled.a`
   text-align: center;
 `;
 
-export const Contact = () => {
+export const Nav = () => {
   return (
     <Container>
-      <InlineLink href="mailto:andrewsnakamoto@gmail.com" target="_blank">&#91;Email&#93;</InlineLink>
-      <InlineLink href="https://www.linkedin.com/in/andrewnakamoto/" target="_blank">&#91;LinkedIn&#93;</InlineLink>
-      <InlineLink href="https://www.linkedin.com/in/andrewnakamoto/" target="_blank">&#91;Resume&#93;</InlineLink>
+      <InlineLink href="mailto:andrewsnakamoto@gmail.com" target="_blank">Home</InlineLink>
+      <InlineLink href="https://www.linkedin.com/in/andrewnakamoto/" target="_blank">Projects</InlineLink>
+      <InlineLink href="https://www.linkedin.com/in/andrewnakamoto/" target="_blank">About Me</InlineLink>
     </Container>
   );
 };

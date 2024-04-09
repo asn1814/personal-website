@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { THEME_COLORS } from '../utils/theme.ts';
-import {Header} from './header.tsx';
+import {Title} from './title.tsx';
 import {Content} from './content.tsx';
 import {Contact} from './contact.tsx';
 
@@ -22,7 +22,7 @@ export const Mainbox = () => {
   return (
     <>
       <Container>
-        <Header></Header>
+        <Title></Title>
         <Content></Content>
         <Contact></Contact>
       </Container>
