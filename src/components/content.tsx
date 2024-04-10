@@ -13,22 +13,30 @@ const InlineLink = styled.a`
   }
 `;
 
+const Paragraph = styled.p`
+  font-size: 16px;
+  /*transition: font-size 0.4s ease-in-out;
+  &:hover {
+    font-size: 20px;
+  }*/
+`;
+
 export const Content = () => {
   return (
     <>
-        <p>
+        <Paragraph>
           Executive Director at <InlineLink href="https://www.dubhacks.co" target="_blank">DubHacks</InlineLink>. 
           Research Assistant at the UW Allen School <InlineLink href="https://netlab.cs.washington.edu/" target="_blank">Mobile Intelligence Lab</InlineLink>.
           Software Engineer Intern at <InlineLink href="https://about.meta.com" target="_blank">Meta</InlineLink>. 
-        </p>
-        <p>
+        </Paragraph>
+        <Paragraph>
           Seattle native. 
           Currently pursuing a Bachelors in Computer Science and Minor in Math at the University of Washington.
           Class of '25.
-        </p>
-        <p>
+        </Paragraph>
+        <Paragraph>
           I love building, eating, travelling, camping, and playing guitar.
-        </p>
+        </Paragraph>
     </>
   );
 };

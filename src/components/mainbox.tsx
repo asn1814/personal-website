@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { THEME_COLORS } from '../utils/theme.ts';
 import {Title} from './title.tsx';
 import {Content} from './content.tsx';
-import {Contact} from './contact.tsx';
 
 const Container = styled.div`
   position: relative;
@@ -24,7 +23,6 @@ export const Mainbox = () => {
       <Container>
         <Title></Title>
         <Content></Content>
-        <Contact></Contact>
       </Container>
     </>
   );

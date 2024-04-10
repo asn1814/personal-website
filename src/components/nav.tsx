@@ -18,7 +18,7 @@ const InlineLink = styled.a`
   color: ${THEME_COLORS.brandWhite};
   background-color: transparent;
   text-decoration: underline transparent 1px;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease;
   &:hover {
     text-decoration: underline solid 1px;
   }

@@ -22,6 +22,10 @@ const Name = styled.div`
   display: flex;  
   flex-direction: column;
   justify-content: end;
+  transition: 0.3s ease;
+  &:hover {
+    
+  }
 `;
 
 export const Title = () => {

@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { THEME_COLORS } from '../utils/theme.ts';
+import { Contact } from './contact.tsx';
 import pfp from '../assets/pfp.jpeg';
 
 const Container = styled.div`
   position: relative;
   height: fit-content;
-  max-width: 500px;
+  max-width: 250px;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
@@ -20,6 +22,7 @@ const Container = styled.div`
 const Text = styled.div`
   font-size: 14px;
   font-style: italic;
+  padding: 2px;
 `;
 
 const HeadshotContainer = styled.div`
@@ -48,10 +51,10 @@ const HeadshotImage = styled.img`
   border: 0;
   max-height: 40px;
   vertical-align: middle;
-  transition: max-height 0.3s ease-in-out;
+  /*transition: max-height 0.3s ease-in-out;
   &:hover {
     max-height: 200px;
-  }
+  }*/
 `;
 
 const Headshot = ({ imageSource }: { imageSource: string; }) => {
@@ -70,6 +73,7 @@ export const Footer = () => {
     <>
       <Container>
         <Headshot imageSource={pfp} />
+        <Contact></Contact>
         <Text>I can even deploy a website!</Text>
       </Container>
     </>

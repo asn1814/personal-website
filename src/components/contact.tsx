@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import { THEME_COLORS } from '../utils/theme.ts';
 
 const Container = styled.div`
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
   width: 100%;
-  max-width: 400px;
+  max-width: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -23,7 +23,7 @@ const InlineLink = styled.a`
     text-decoration: underline solid 1px;
   }
   width: 100%;
-  max-width: 100px;
+  max-width: 65px;
   text-align: center;
 `;
 
@@ -32,7 +32,7 @@ export const Contact = () => {
     <Container>
       <InlineLink href="mailto:andrewsnakamoto@gmail.com" target="_blank">&#91;Email&#93;</InlineLink>
       <InlineLink href="https://www.linkedin.com/in/andrewnakamoto/" target="_blank">&#91;LinkedIn&#93;</InlineLink>
-      <InlineLink href="https://www.linkedin.com/in/andrewnakamoto/" target="_blank">&#91;Resume&#93;</InlineLink>
+      <InlineLink href="https://www.linkedin.com/in/andrewnakamoto/" target="_blank">&#91;Resumé&#93;</InlineLink>
     </Container>
   );
 };
