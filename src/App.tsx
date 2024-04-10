@@ -8,6 +8,7 @@ import { About } from './components/about.tsx';
 import { THEME_COLORS } from './utils/theme.ts';
 import { INTERNAL_LINKS } from './utils/links.ts';
 
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
