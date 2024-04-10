@@ -30,12 +30,17 @@ export const Content = () => {
           Software Engineer Intern at <InlineLink href="https://about.meta.com" target="_blank">Meta</InlineLink>. 
         </Paragraph>
         <Paragraph>
-          Seattle native. 
-          Currently pursuing a Bachelors in Computer Science and Minor in Math at the University of Washington.
+          Pursuing a Bachelors in Computer Science with a Minor in Math at the University of Washington.
           Class of '25.
         </Paragraph>
         <Paragraph>
-          I love building, eating, travelling, camping, and playing guitar.
+          I love building, eating, traveling, camping, and playing guitar.
+        </Paragraph>
+        <Paragraph>
+          <InlineLink href="/projects" target="_self">View my projects.</InlineLink>
+        </Paragraph>
+        <Paragraph>
+          <InlineLink href="/about" target="_self">Learn more about me.</InlineLink>
         </Paragraph>
     </>
   );
