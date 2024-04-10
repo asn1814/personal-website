@@ -30,9 +30,9 @@ const InlineLink = styled.a`
 export const Nav = () => {
   return (
     <Container>
-      <InlineLink href="mailto:andrewsnakamoto@gmail.com" target="_blank">Home</InlineLink>
-      <InlineLink href="https://www.linkedin.com/in/andrewnakamoto/" target="_blank">Projects</InlineLink>
-      <InlineLink href="https://www.linkedin.com/in/andrewnakamoto/" target="_blank">About Me</InlineLink>
+      <InlineLink href="/" target="_self">Home</InlineLink>
+      <InlineLink href="/projects" target="_self">Projects</InlineLink>
+      <InlineLink href="/about" target="_self">About Me</InlineLink>
     </Container>
   );
 };
