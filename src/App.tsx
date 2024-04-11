@@ -15,6 +15,50 @@ const Container = styled.div`
   min-height: 100vh;
   font-family: Didot, serif;
   color: ${THEME_COLORS.brandWhite};
+
+  @keyframes fade-in {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .fade04 {
+    opacity: 0;
+    animation: fade-in 0.4s normal both;
+  }
+
+  .fade08 {
+    opacity: 0;
+    animation: fade-in 0.8s normal both;
+  }
+
+  .fade12 {
+    opacity: 0;
+    animation: fade-in 1.2s normal both;
+  }
+
+  .fade16 {
+    opacity: 0;
+    animation: fade-in 1.6s normal both;
+  }
+
+  .fade20 {
+    opacity: 0;
+    animation: fade-in 2.0s normal both;
+  }
+
+  .fade30 {
+    opacity: 0;
+    animation: fade-in 3.0s normal both;
+  }
+
+  .fade40 {
+    opacity: 0;
+    animation: fade-in 4.0s normal both;
+  }
 `;
 
 function App() {

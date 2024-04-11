@@ -27,7 +27,7 @@ export const Title = () => {
   return (
     <>
       <Container>
-        <Name>Andrew Nakamoto</Name>
+        <Name className="fade20">Andrew Nakamoto</Name>
       </Container>
     </>
   );

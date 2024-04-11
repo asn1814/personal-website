@@ -75,6 +75,7 @@ export const Mainbox = () => {
           loading="eager"
           onMouseEnter={() => {setText("Whatcha looking at?");}}
           onMouseLeave={() => {setText("");}}
+          className="fade30"
         ></HeadshotImage>
         <Hidden>{text}</Hidden>
       </HeadshotContainer>

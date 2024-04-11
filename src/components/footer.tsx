@@ -74,10 +74,10 @@ const Headshot = ({ imageSource }: { imageSource: string; }) => {
 export const Footer = () => {
   return (
     <>
-      <Container>
+      <Container className="fade30">
         <Headshot imageSource={pfp} />
         <Contact></Contact>
-        <Text>I can even deploy a website!</Text>
+        <Text className="fade40">I can even deploy a website!</Text>
       </Container>
     </>
   );

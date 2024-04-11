@@ -29,7 +29,7 @@ const InlineLink = styled.a`
 
 export const Contact = () => {
   return (
-    <Container>
+    <Container className="fade30">
       <InlineLink href="mailto:andrewsnakamoto@gmail.com" target="_blank">Email</InlineLink>|
       <InlineLink href="https://www.linkedin.com/in/andrewnakamoto/" target="_blank">LinkedIn</InlineLink>|
       <InlineLink href="https://github.com/asn1814/Resume/blob/main/Nakamoto_Andrew_Resume.pdf" target="_blank">Resumé</InlineLink>|

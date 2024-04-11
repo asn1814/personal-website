@@ -77,12 +77,13 @@ const ImageRow = styled.div`
   margin: 0px auto;
 `;
 
-const Headshot = ({ imageSource }: { imageSource: string; }) => {
+const Headshot = ({ imageSource, className}: { imageSource: string; className: string; }) => {
   return (
     <ImageContainer>
       <Image
         src={imageSource}
         loading="lazy"
+        className={className}
       ></Image>
     </ImageContainer>
   );
@@ -93,29 +94,29 @@ export const About = () => {
     <>
       <Container>
         <ImageRow>
-          <Headshot imageSource={baby} />
-          <Headshot imageSource={presentation} />
-          <Headshot imageSource={dubteam} />
-          <Headshot imageSource={camping} />
+          <Headshot imageSource={baby} className="fade04"/>
+          <Headshot imageSource={presentation} className="fade08"/>
+          <Headshot imageSource={dubteam} className="fade12"/>
+          <Headshot imageSource={camping} className="fade16"/>
         </ImageRow>
-        <Paragraph>
+        <Paragraph className="fade20">
           I'm a software developer with a passion for nonprofit management and community building. 
         </Paragraph>
-        <Paragraph>
+        <Paragraph className="fade20">
           I grew up in Seattle and stayed for college. 
           I picked up programming in middle school to learn alongside <InlineLink href="https://www.chess.com/member/asn1814" target="_blank">chess</InlineLink> and haven't looked back. 
         </Paragraph>
-        <Paragraph>
+        <Paragraph className="fade20">
           I was a wilderness survival instructor with <InlineLink href="https://post84.org" target="_blank">POST84</InlineLink>, teaching tarp shelters, firestarting, and orienteering.
           I began working on their Executive Committee and managed logistics and finance.
         </Paragraph>
-        <Paragraph>
+        <Paragraph className="fade20">
           At the University of Washington I began working for <InlineLink href="https://www.dubhacks.co" target="_blank">DubHacks</InlineLink>. 
           Now I direct the program and lead our tech stack development. 
           Our team hosts the largest hackathon in the PNW. 
           Our internal incubator DubHacks Next cultivates the very best of Seattle's young tech talent.
         </Paragraph>
-        <Paragraph>
+        <Paragraph className="fade20">
           I love traveling and am hoping to check Antarctica off my list soon. 
           I'm a classically trained clarinetist, but now I'm working to learn guitar and see as many concerts as possible. 
           If you have any good food recommendations in Seattle, email me - I love to eat!

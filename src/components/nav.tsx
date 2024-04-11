@@ -30,7 +30,7 @@ const InlineLink = styled.a`
 
 export const Nav = () => {
   return (
-    <Container>
+    <Container className="fade20">
       <InlineLink href={INTERNAL_LINKS.HOME} target="_self">Home</InlineLink>
       <InlineLink href={INTERNAL_LINKS.PROJECTS} target="_self">Projects</InlineLink>
       <InlineLink href={INTERNAL_LINKS.ABOUT} target="_self">About Me</InlineLink>
