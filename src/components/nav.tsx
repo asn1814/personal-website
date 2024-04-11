@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { THEME_COLORS } from '../utils/theme.ts';
+import { INTERNAL_LINKS } from '../utils/links.ts';
 
 const Container = styled.div`
   padding: 20px 0px 0px;
@@ -30,9 +31,9 @@ const InlineLink = styled.a`
 export const Nav = () => {
   return (
     <Container>
-      <InlineLink href="/" target="_self">Home</InlineLink>
-      <InlineLink href="/projects" target="_self">Projects</InlineLink>
-      <InlineLink href="/about" target="_self">About Me</InlineLink>
+      <InlineLink href={INTERNAL_LINKS.HOME} target="_self">Home</InlineLink>
+      <InlineLink href={INTERNAL_LINKS.PROJECTS} target="_self">Projects</InlineLink>
+      <InlineLink href={INTERNAL_LINKS.ABOUT} target="_self">About Me</InlineLink>
     </Container>
   );
 };

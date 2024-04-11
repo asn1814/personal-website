@@ -6,7 +6,7 @@ const Container = styled.div`
   margin-right: 5px;
   margin-left: 5px;
   width: 100%;
-  max-width: 200px;
+  max-width: 260px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -23,16 +23,17 @@ const InlineLink = styled.a`
     text-decoration: underline solid 1px;
   }
   width: 100%;
-  max-width: 65px;
+  max-width: 50px;
   text-align: center;
 `;
 
 export const Contact = () => {
   return (
     <Container>
-      <InlineLink href="mailto:andrewsnakamoto@gmail.com" target="_blank">&#91;Email&#93;</InlineLink>
-      <InlineLink href="https://www.linkedin.com/in/andrewnakamoto/" target="_blank">&#91;LinkedIn&#93;</InlineLink>
-      <InlineLink href="https://www.linkedin.com/in/andrewnakamoto/" target="_blank">&#91;Resumé&#93;</InlineLink>
+      <InlineLink href="mailto:andrewsnakamoto@gmail.com" target="_blank">Email</InlineLink>|
+      <InlineLink href="https://www.linkedin.com/in/andrewnakamoto/" target="_blank">LinkedIn</InlineLink>|
+      <InlineLink href="https://github.com/asn1814/Resume/blob/main/Nakamoto_Andrew_Resume.pdf" target="_blank">Resumé</InlineLink>|
+      <InlineLink href="https://github.com/asn1814" target="_blank">GitHub</InlineLink>
     </Container>
   );
 };
