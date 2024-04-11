@@ -11,7 +11,7 @@ const Container = styled.div`
   flex-direction: row;
   -webkit-box-pack: justify;
   justify-content: center;
-  font-style: italic;
+  /*font-style: italic;*/
   border-bottom: solid 0.5px;
   border-color: ${THEME_COLORS.brandWhite};
   padding: 10px 0px;
@@ -21,16 +21,14 @@ const Name = styled.div`
   display: flex;  
   flex-direction: column;
   justify-content: end;
-  transition: 0.3s ease;
-  &:hover {
-
-  }
 `;
 
 export const Title = () => {
   return (
     <>
-      <Container><Name>Andrew Nakamoto</Name></Container>
+      <Container>
+        <Name>Andrew Nakamoto</Name>
+      </Container>
     </>
   );
 };

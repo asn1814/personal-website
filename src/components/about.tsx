@@ -19,7 +19,7 @@ const Container = styled.div`
   margin: 20px;
   border-top: solid 0.5px;
   overflow: scroll;
-  max-height: 60vh;
+  max-height: 57vh;
 `;
 
 const InlineLink = styled.a`

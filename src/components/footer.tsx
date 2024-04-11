@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { THEME_COLORS } from '../utils/theme.ts';
+import { INTERNAL_LINKS } from '../utils/links.ts';
 import { Contact } from './contact.tsx';
 import pfp from '../assets/pfp.jpeg';
 
@@ -60,10 +61,12 @@ const HeadshotImage = styled.img`
 const Headshot = ({ imageSource }: { imageSource: string; }) => {
   return (
     <HeadshotContainer>
-      <HeadshotImage
-        src={imageSource}
-        loading="eager"
-      ></HeadshotImage>
+      <a href={INTERNAL_LINKS.HOME} target="_self">
+        <HeadshotImage
+          src={imageSource}
+          loading="eager"
+        ></HeadshotImage>
+      </a>
     </HeadshotContainer>
   );
 };

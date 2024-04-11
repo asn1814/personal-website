@@ -13,8 +13,20 @@ const InlineLink = styled.a`
   }
 `;
 
+const FancyLink = styled.a`
+  color: ${THEME_COLORS.brandWhite};
+  text-decoration: underline solid 1px ${THEME_COLORS.brandMid};
+  background-color: transparent;
+  font-style: italic;
+  transition: all 0.3s ease;
+  &:hover {
+    text-decoration: underline solid 1px ${THEME_COLORS.brandWhite};
+  }
+`;
+
 const Paragraph = styled.p`
   font-size: 16px;
+  min-height: 20.5px;
   /*transition: font-size 0.4s ease-in-out;
   &:hover {
     font-size: 20px;
@@ -37,10 +49,10 @@ export const Content = () => {
           I love building, eating, traveling, camping, and playing guitar.
         </Paragraph>
         <Paragraph>
-          <InlineLink href="/projects" target="_self">View my projects.</InlineLink>
+          <FancyLink href="/projects" target="_self">View my projects.</FancyLink>
         </Paragraph>
         <Paragraph>
-          <InlineLink href="/about" target="_self">Learn more about me.</InlineLink>
+          <FancyLink href="/about" target="_self">Learn more about me.</FancyLink>
         </Paragraph>
     </>
   );

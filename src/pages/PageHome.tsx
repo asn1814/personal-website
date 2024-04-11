@@ -1,12 +1,12 @@
 import React from 'react';
 import { Mainbox } from '../components/mainbox.tsx';
-import { Footer } from '../components/footer.tsx';
+import { Contact } from '../components/contact.tsx';
 
 const PageHome: React.FC = props => {
   return (
     <>
       <Mainbox />
-      <Footer />
+      <Contact></Contact>
     </>
   );
 };
