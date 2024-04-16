@@ -26,8 +26,8 @@ const Name = styled.div`
 export const Title = () => {
   return (
     <>
-      <Container>
-        <Name className="fade20">Andrew Nakamoto</Name>
+      <Container className="fade28">
+        <Name>Andrew Nakamoto</Name>
       </Container>
     </>
   );

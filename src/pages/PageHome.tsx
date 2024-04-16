@@ -6,7 +6,7 @@ const PageHome: React.FC = props => {
   return (
     <>
       <Mainbox />
-      <Contact></Contact>
+      <Contact classname='fade28'></Contact>
     </>
   );
 };

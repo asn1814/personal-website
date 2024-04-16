@@ -19,6 +19,7 @@ const FancyLink = styled.a`
   border-radius: 15px;
   font-style: italic;
   transition: all 0.3s ease;
+  width: fit-content;
   &:hover {
     text-decoration: underline solid 1px ${THEME_COLORS.brandWhite};
   }

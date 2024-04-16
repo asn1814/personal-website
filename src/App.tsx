@@ -50,6 +50,16 @@ const Container = styled.div`
     animation: fade-in 2.0s normal both;
   }
 
+  .fade24 {
+    opacity: 0;
+    animation: fade-in 2.4s normal both;
+  }
+
+  .fade28 {
+    opacity: 0;
+    animation: fade-in 2.8s normal both;
+  }
+
   .fade30 {
     opacity: 0;
     animation: fade-in 3.0s normal both;
@@ -57,7 +67,7 @@ const Container = styled.div`
 
   .fade40 {
     opacity: 0;
-    animation: fade-in 4.0s normal both;
+    animation: fade-in 3.0s 1s normal both;
   }
 `;
 

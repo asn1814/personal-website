@@ -76,7 +76,7 @@ export const Footer = () => {
     <>
       <Container className="fade30">
         <Headshot imageSource={pfp} />
-        <Contact></Contact>
+        <Contact classname="fade30"></Contact>
         <Text className="fade40">I can even deploy a website!</Text>
       </Container>
     </>
