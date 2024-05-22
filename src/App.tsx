@@ -7,13 +7,15 @@ import PageProjects from './pages/PageProjects.tsx';
 import { THEME_COLORS } from './utils/theme.ts';
 import { INTERNAL_LINKS } from './utils/links.ts';
 
+// Consider "Optima" font
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center; /* space-between */
   align-items: center;
   min-height: 100vh;
-  font-family: Didot, serif;
+  font-family: "Times New Roman", serif;
   color: ${THEME_COLORS.brandWhite};
 
   @keyframes fade-in {

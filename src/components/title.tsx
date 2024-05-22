@@ -15,6 +15,7 @@ const Container = styled.div`
   border-bottom: solid 0.5px;
   border-color: ${THEME_COLORS.brandWhite};
   padding: 10px 0px;
+  font-size: 17px;
 `;
 
 const Name = styled.div`
