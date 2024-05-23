@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.a9de4378.css",
-    "main.js": "/personal-website/static/js/main.237f0167.js",
-    "static/js/453.253ccfac.chunk.js": "/personal-website/static/js/453.253ccfac.chunk.js",
-    "static/media/camping.jpg": "/personal-website/static/media/camping.df6253dff4cfeeba2586.jpg",
-    "static/media/dubteam.jpg": "/personal-website/static/media/dubteam.17a239211baee92c6948.jpg",
-    "static/media/pfp.jpeg": "/personal-website/static/media/pfp.ff1f59f2dd72763bd60e.jpeg",
-    "static/media/baby.jpeg": "/personal-website/static/media/baby.665362b5b665672056aa.jpeg",
-    "static/media/presentation.jpeg": "/personal-website/static/media/presentation.ac5830fc220ddf571f24.jpeg",
-    "index.html": "/personal-website/index.html",
-    "main.a9de4378.css.map": "/personal-website/static/css/main.a9de4378.css.map",
-    "main.237f0167.js.map": "/personal-website/static/js/main.237f0167.js.map",
-    "453.253ccfac.chunk.js.map": "/personal-website/static/js/453.253ccfac.chunk.js.map"
+    "main.css": "/static/css/main.a9de4378.css",
+    "main.js": "/static/js/main.606d14d0.js",
+    "static/js/453.253ccfac.chunk.js": "/static/js/453.253ccfac.chunk.js",
+    "static/media/camping.jpg": "/static/media/camping.df6253dff4cfeeba2586.jpg",
+    "static/media/dubteam.jpg": "/static/media/dubteam.17a239211baee92c6948.jpg",
+    "static/media/pfp.jpeg": "/static/media/pfp.ff1f59f2dd72763bd60e.jpeg",
+    "static/media/baby.jpeg": "/static/media/baby.665362b5b665672056aa.jpeg",
+    "static/media/presentation.jpeg": "/static/media/presentation.ac5830fc220ddf571f24.jpeg",
+    "index.html": "/index.html",
+    "main.a9de4378.css.map": "/static/css/main.a9de4378.css.map",
+    "main.606d14d0.js.map": "/static/js/main.606d14d0.js.map",
+    "453.253ccfac.chunk.js.map": "/static/js/453.253ccfac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a9de4378.css",
-    "static/js/main.237f0167.js"
+    "static/js/main.606d14d0.js"
   ]
 }
