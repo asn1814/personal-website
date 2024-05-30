@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#352F44" />
     <meta
       name="description"
       content="Hi! I'm Andrew Nakamoto, and this is my website. Come see what I've been working on!"
@@ -33,12 +33,10 @@
         delete sessionStorage.redirect;
         if (redirect && redirect != location.href) {
           history.replaceState(null, null, redirect);
-          // REMOVE THIS - just showing the redirect route in the UI
-          document.body.setAttribute('message', 'This page was redirected by 404.html, from the route: ' + redirect);
+
         }
         else {
-          // REMOVE THIS - just showing the redirect route in the UI
-          document.body.setAttribute('message', 'This page was loaded directly from the index.html file');
+
         }
       })();
     </script>
