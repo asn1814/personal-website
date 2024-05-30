@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { THEME_COLORS } from '../utils/theme.ts';
+import { INTERNAL_LINKS } from '../utils/links.ts';
 
 const InlineLink = styled.a`
   color: ${THEME_COLORS.brandWhite};
@@ -75,10 +76,10 @@ export const Content = () => {
           I love building, eating, traveling, camping, and playing guitar.
         </Paragraph>
         <Paragraph className="fade16">
-          <FancyLink href="/projects" target="_self" className="first">View my projects.</FancyLink>
+          <FancyLink href={INTERNAL_LINKS.PROJECTS} target="_self" className="first">View my projects.</FancyLink>
         </Paragraph>
         <Paragraph className="fade20">
-          <FancyLink href="/about" target="_self" className="second">Learn more about me.</FancyLink>
+          <FancyLink href={INTERNAL_LINKS.ABOUT} target="_self" className="second">Learn more about me.</FancyLink>
         </Paragraph>
     </>
   );
