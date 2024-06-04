@@ -18,7 +18,7 @@ const Container = styled.div`
   color: ${THEME_COLORS.brandWhite};
   margin: 20px;
   border-top: solid 0.5px;
-  overflow: scroll;
+  overflow: auto;
   max-height: 57vh;
 `;
 
@@ -61,7 +61,7 @@ const ImageContainer = styled.div`
 const Image = styled.img`
   max-height: 80px;
   vertical-align: middle;
-  transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.2s ease-in-out;
   &:hover {
     max-height: 400px;
   }

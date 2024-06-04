@@ -15,7 +15,7 @@ const Container = styled.div`
   color: ${THEME_COLORS.brandWhite};
   margin: 20px;
   border-top: solid 0.5px;
-  overflow: scroll;
+  overflow: auto;
   max-height: 57vh;
 `;
 
