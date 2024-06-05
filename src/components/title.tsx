@@ -13,7 +13,7 @@ const Container = styled.div`
   justify-content: center;
   /*font-style: italic;*/
   border-bottom: solid 0.5px;
-  border-color: ${THEME_COLORS.brandWhite};
+  border-color: ${THEME_COLORS.brandWhite}36;
   padding: 10px 0px;
   font-size: 17px;
 `;
