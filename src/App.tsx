@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import PageHome from './pages/PageHome.tsx';
 import PageAbout from './pages/PageAbout.tsx';
 import PageProjects from './pages/PageProjects.tsx';
+import PageNotFound from './pages/PageNotFound.tsx';
 import { THEME_COLORS } from './utils/theme.ts';
 import { INTERNAL_LINKS } from './utils/links.ts';
 
@@ -92,6 +93,7 @@ function App() {
               <Route path={INTERNAL_LINKS.HOME} element={<PageHome />} />
               <Route path={INTERNAL_LINKS.PROJECTS} element={<PageProjects />} />
               <Route path={INTERNAL_LINKS.ABOUT} element={<PageAbout />} />
+              <Route path={INTERNAL_LINKS.NOTFOUND} element={<PageNotFound />} />
             </Routes>
           </Glass>
       </Container>
