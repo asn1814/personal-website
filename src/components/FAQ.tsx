@@ -98,7 +98,7 @@ const Hydrone: Project = {
   title: "Hydrone for Oculus VR",
   skills: "C#, Unity, Oculus, Blender",
   description: <div>
-    Programmed and modeled an interactive VR demonstration of a floating hydroponics garden for the Oculus Headset in C\# for a client proposal. Implemented haptic feedback and full range of view for controllers and headset.
+    Programmed and modeled an interactive VR demonstration of a floating hydroponics garden for the Oculus Headset in C# for a client proposal. Implemented haptic feedback and full range of view for controllers and headset.
   </div>
 }
 

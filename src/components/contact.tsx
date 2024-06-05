@@ -32,7 +32,7 @@ export const Contact = ({ classname }: { classname: string; }) => {
     <Container className={classname}>
       <InlineLink href="mailto:andrewsnakamoto@gmail.com" target="_blank">Email</InlineLink>|
       <InlineLink href="https://www.linkedin.com/in/andrewnakamoto/" target="_blank">LinkedIn</InlineLink>|
-      <InlineLink href="https://github.com/asn1814/Resume/blob/main/Nakamoto_Andrew_Resume.pdf" target="_blank">Resumé</InlineLink>|
+      <InlineLink href="https://github.com/asn1814/Resume/blob/main/Nakamoto_Andrew_Resume.pdf" target="_blank">Résumé</InlineLink>|
       <InlineLink href="https://github.com/asn1814" target="_blank">GitHub</InlineLink>
     </Container>
   );
