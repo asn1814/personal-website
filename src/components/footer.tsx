@@ -8,7 +8,7 @@ import pfp from '../assets/pfp.jpeg';
 const Container = styled.div`
   position: relative;
   height: fit-content;
-  max-width: 250px;
+  padding: 10px 0px 10px 0px;
   width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -16,7 +16,6 @@ const Container = styled.div`
   -webkit-box-pack: justify;
   justify-content: space-between;
   color: ${THEME_COLORS.brandWhite};
-  margin: 15px;
   text-align: center;
 `;
 

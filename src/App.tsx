@@ -73,15 +73,27 @@ const Container = styled.div`
   }
 `;
 
+const Glass = styled.div`
+  background: ${THEME_COLORS.brandWhite}05;
+  box-shadow: 0 8px 32px 0 ${THEME_COLORS.brandMid}37;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid ${THEME_COLORS.brandWhite}18;
+  margin: 5px;
+`
+
 function App() {
   return (
     <BrowserRouter>
       <Container>
-          <Routes>
-            <Route path={INTERNAL_LINKS.HOME} element={<PageHome />} />
-            <Route path={INTERNAL_LINKS.PROJECTS} element={<PageProjects />} />
-            <Route path={INTERNAL_LINKS.ABOUT} element={<PageAbout />} />
-          </Routes>
+          <Glass>
+            <Routes>
+              <Route path={INTERNAL_LINKS.HOME} element={<PageHome />} />
+              <Route path={INTERNAL_LINKS.PROJECTS} element={<PageProjects />} />
+              <Route path={INTERNAL_LINKS.ABOUT} element={<PageAbout />} />
+            </Routes>
+          </Glass>
       </Container>
     </BrowserRouter>
   );
