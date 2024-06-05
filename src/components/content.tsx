@@ -16,7 +16,7 @@ const InlineLink = styled.a`
 
 const FancyLink = styled.a`
   color: ${THEME_COLORS.brandWhite};
-  text-decoration: underline solid 1px ${THEME_COLORS.brandMid};
+  text-decoration: underline solid 1px ${THEME_COLORS.brandWhite}50;
   border-radius: 15px;
   font-style: italic;
   transition: all 0.3s ease;
@@ -76,10 +76,10 @@ export const Content = () => {
           I love building, eating, traveling, camping, and playing guitar.
         </Paragraph>
         <Paragraph className="fade16">
-          <FancyLink href={INTERNAL_LINKS.PROJECTS} target="_self" className="first">View my projects.</FancyLink>
+          <FancyLink href={INTERNAL_LINKS.PROJECTS} target="_self" className="first">View my projects</FancyLink>.
         </Paragraph>
         <Paragraph className="fade20">
-          <FancyLink href={INTERNAL_LINKS.ABOUT} target="_self" className="second">Learn more about me.</FancyLink>
+          <FancyLink href={INTERNAL_LINKS.ABOUT} target="_self" className="second">Learn more about me</FancyLink>.
         </Paragraph>
     </>
   );

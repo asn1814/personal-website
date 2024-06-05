@@ -45,7 +45,7 @@ const HeadshotImage = styled.img`
   border: 0;
   max-height: 40px;
   vertical-align: middle;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
   outline: ${THEME_COLORS.brandWhite} 0px solid;
   &:hover {
     max-height: 200px;
