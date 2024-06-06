@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { THEME_COLORS } from '../utils/theme.ts';
 import { INTERNAL_LINKS } from '../utils/links.ts';
@@ -23,6 +24,7 @@ const Text = styled.div`
   font-size: 14px;
   font-style: italic;
   padding: 2px;
+  cursor: help;
 `;
 
 const HeadshotContainer = styled.div`
@@ -71,12 +73,53 @@ const Headshot = ({ imageSource }: { imageSource: string; }) => {
 };
 
 export const Footer = () => {
+
+  const Tagline = () => {
+    const [text, setText] = useState("");
+  
+    useEffect(() => {
+      let r_text = ['I can even deploy a website!',
+        'Alive 2007 - Daft Punk',
+        'Thing of Gold - Snarky Puppy'];
+
+      setText(r_text[Math.floor(r_text.length * Math.random())]);
+    },[])
+
+    const randText = (event) => {
+      let r_text = ['Professional Astrologist',
+        'Directive Executor of HubDacks',
+        'This random quotes thing used to be so buggy',
+        'Hi Lockheed 👉👈🥺',
+        'Still waiting for Masa to invest in me',
+        'Programmer? I barely know \'er!',
+        'Oh to be a mouse in Redwall',
+        '"The shadow lies upon his tomb / In Moria, in Khazad-dûm."',
+        '"Fear is the mind-killer."',
+        'Two Crabs, Ryūryūkyo Shinsai',
+        'Shaco main',
+        'Book Yen, game Triss',
+        'Roll initiative!',
+        'You just lost the game',
+        'Streetwear? Right there, silly'];
+
+      var i = Math.floor(r_text.length * Math.random());
+      if (text !== r_text[i])
+        setText(r_text[i]);
+      else 
+        setText(r_text[(i + 1) % r_text.length]);
+    };
+
+    return (
+      <div onClick={randText}><Text className="fade40">{text}</Text></div>
+    );
+  }
+
   return (
     <>
       <Container className="fade30">
         <Headshot imageSource={pfp} />
         <Contact classname="fade30"></Contact>
-        <Text className="fade40">I can even deploy a website!</Text>
+        <Tagline></Tagline>
       </Container>
     </>
   );
