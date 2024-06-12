@@ -82,7 +82,7 @@ const SciFact: Project = {
   title: "SciFact LLM",
   skills: "Python, PyTorch, Google Colab, HuggingFace",
   description: <div>
-    Experimented with several large langauge model strategies for the OpenBookQA benchmark. Built and fine-tuned a RAG fact-retrieval model that achieved near-human 85% accuracy on the dataset despite limited compute. <InlineLink href="https://github.com/asn1814/Fact-Retrieval-and-Ensemble-Models-on-OpenBookQA/blob/main/CSE447_Final_Project_Report___Yeung__Nakamoto.pdf" target="_blank">Check out our paper!</InlineLink>
+    Experimented with several large language model strategies for the OpenBookQA benchmark. Built and fine-tuned a RAG fact-retrieval model that achieved near-human 85% accuracy on the dataset despite limited compute. <InlineLink href="https://github.com/asn1814/Fact-Retrieval-and-Ensemble-Models-on-OpenBookQA/blob/main/CSE447_Final_Project_Report___Yeung__Nakamoto.pdf" target="_blank">Check out our paper!</InlineLink>
   </div>
 }
 

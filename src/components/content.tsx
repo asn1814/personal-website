@@ -70,7 +70,7 @@ export const Content = () => {
         </Paragraph>
         <Paragraph className="fade08">
           Pursuing a Bachelors in Computer Science with a Minor in Math at the University of Washington.
-          Class of '25.
+          Class of '26.
         </Paragraph>
         <Paragraph className="fade12">
           I love building, eating, traveling, camping, and playing guitar.
