@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { THEME_COLORS } from '../utils/theme.ts';
 import { INTERNAL_LINKS } from '../utils/links.ts';
+import { NavLink } from 'react-router-dom';
 
 const Container = styled.div`
   padding: 20px 0px 0px;
@@ -15,10 +16,9 @@ const Container = styled.div`
   margin: 0px auto;
 `;
 
-const InlineLink = styled.a`
+const StyledNavLink = styled(NavLink)`
   color: ${THEME_COLORS.brandWhite};
   background-color: transparent;
-  text-decoration: underline transparent 1px;
   transition: text-decoration 0.3s ease;
   &:hover {
     text-decoration: underline solid 1px;
@@ -26,14 +26,41 @@ const InlineLink = styled.a`
   width: 100%;
   max-width: 100px;
   text-align: center;
+  text-decoration: ${props => (props.className === 'selected' ? 'underline solid 1px #FAF0E690' : 'underline transparent 1px')};
 `;
 
 export const Nav = () => {
+  const [currentLink, setCurrentLink] = useState<string>(INTERNAL_LINKS.HOME);
+
+  useEffect(() => {
+    const url = window.location.pathname;
+    if (url === INTERNAL_LINKS.ABOUT) setCurrentLink(INTERNAL_LINKS.ABOUT);
+    if (url === INTERNAL_LINKS.PROJECTS) setCurrentLink(INTERNAL_LINKS.PROJECTS);
+  }, []);
+
   return (
     <Container className="fade20">
-      <InlineLink href={INTERNAL_LINKS.HOME} target="_self">Home</InlineLink>
-      <InlineLink href={INTERNAL_LINKS.PROJECTS} target="_self">Projects</InlineLink>
-      <InlineLink href={INTERNAL_LINKS.ABOUT} target="_self">About Me</InlineLink>
+      <StyledNavLink
+        onClick={() => setCurrentLink(INTERNAL_LINKS.HOME)}
+        className={currentLink === INTERNAL_LINKS.HOME ? 'selected' : ''}
+        to={INTERNAL_LINKS.HOME}
+      >
+        Home
+      </StyledNavLink>
+      <StyledNavLink
+        onClick={() => setCurrentLink(INTERNAL_LINKS.PROJECTS)}
+        className={currentLink === INTERNAL_LINKS.PROJECTS ? 'selected' : ''}
+        to={INTERNAL_LINKS.PROJECTS}
+      >
+        Projects
+      </StyledNavLink>
+      <StyledNavLink
+        onClick={() => setCurrentLink(INTERNAL_LINKS.ABOUT)}
+        className={currentLink === INTERNAL_LINKS.ABOUT ? 'selected' : ''}
+        to={INTERNAL_LINKS.ABOUT}
+      >
+        About
+      </StyledNavLink>
     </Container>
   );
 };
