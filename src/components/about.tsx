@@ -70,12 +70,13 @@ const Image = styled.img`
 
 const ImageRow = styled.div`
   padding: 20px 0px 0px;
-  width: 100%;
+  width: 85vw;
   max-width: 500px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0px auto;
+  overflow: auto;
 `;
 
 const Headshot = ({ imageSource, className}: { imageSource: string; className: string; }) => {
