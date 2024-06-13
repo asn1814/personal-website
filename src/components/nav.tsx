@@ -59,7 +59,7 @@ export const Nav = () => {
         className={currentLink === INTERNAL_LINKS.ABOUT ? 'selected' : ''}
         to={INTERNAL_LINKS.ABOUT}
       >
-        About
+        About Me
       </StyledNavLink>
     </Container>
   );
