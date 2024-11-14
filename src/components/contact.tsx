@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { THEME_COLORS } from '../utils/theme.ts';
+import { EXTERNAL_LINKS, INTERNAL_LINKS } from '../utils/links.ts';
 
 const Container = styled.div`
   margin-right: 5px;
@@ -30,10 +31,10 @@ const InlineLink = styled.a`
 export const Contact = ({ classname }: { classname: string; }) => {
   return (
     <Container className={classname}>
-      <InlineLink href="mailto:andrewsnakamoto@gmail.com" target="_blank">Email</InlineLink>|
-      <InlineLink href="https://www.linkedin.com/in/andrewnakamoto/" target="_blank">LinkedIn</InlineLink>|
-      <InlineLink href="https://github.com/asn1814/Resume/blob/main/Nakamoto_Andrew_Resume.pdf" target="_blank">Résumé</InlineLink>|
-      <InlineLink href="https://github.com/asn1814" target="_blank">GitHub</InlineLink>
+      <InlineLink href={EXTERNAL_LINKS.EMAIL} target="_blank">Email</InlineLink>|
+      <InlineLink href={EXTERNAL_LINKS.LINKEDIN} target="_blank">LinkedIn</InlineLink>|
+      <InlineLink href={INTERNAL_LINKS.RESUME} target="_blank">Résumé</InlineLink>|
+      <InlineLink href={EXTERNAL_LINKS.GITHUB} target="_blank">GitHub</InlineLink>
     </Container>
   );
 };
