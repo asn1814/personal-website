@@ -17,11 +17,18 @@ const Container = styled.div`
   justify-content: space-between;
   color: ${THEME_COLORS.brandWhite};
   margin: 20px;
-  border-top: solid 0.5px;
-  border-color: ${THEME_COLORS.brandWhite}36;
   overflow: auto;
   max-height: 57vh;
 `;
+
+const Line = styled.div`
+  width: 100%;
+  border-top: solid 0.5px;
+  margin: 0px;
+  padding: 0px;
+  border-top: solid 0.5px;
+  border-color: ${THEME_COLORS.brandWhite}36;
+`
 
 const InlineLink = styled.a`
   color: ${THEME_COLORS.brandWhite};
@@ -95,6 +102,7 @@ export const About = () => {
   return (
     <>
       <Container>
+        <Line className="fade20" />
         <ImageRow>
           <Headshot imageSource={baby} className="fade04"/>
           <Headshot imageSource={presentation} className="fade08"/>

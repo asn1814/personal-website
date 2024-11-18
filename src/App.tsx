@@ -75,12 +75,12 @@ const Container = styled.div`
 `;
 
 const Glass = styled.div`
-  background: ${THEME_COLORS.brandWhite}05;
+  /*background: ${THEME_COLORS.brandWhite}05;
   box-shadow: 0 8px 32px 0 ${THEME_COLORS.brandMid}37;
+  border: 1px solid ${THEME_COLORS.brandWhite}18;
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
-  border-radius: 10px;
-  border: 1px solid ${THEME_COLORS.brandWhite}18;
+  border-radius: 10px;*/
   margin: 5px;
 `
 

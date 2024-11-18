@@ -15,11 +15,18 @@ const Container = styled.div`
   justify-content: space-between;
   color: ${THEME_COLORS.brandWhite};
   margin: 20px;
-  border-top: solid 0.5px;
-  border-color: ${THEME_COLORS.brandWhite}36;
   overflow: auto;
   max-height: 57vh;
 `;
+
+const Line = styled.div`
+  width: 100%;
+  border-top: solid 0.5px;
+  margin: 0px;
+  padding: 0px;
+  border-top: solid 0.5px;
+  border-color: ${THEME_COLORS.brandWhite}36;
+`
 
 const Paragraph = styled.p`
   font-size: 16px;
@@ -40,6 +47,7 @@ export const Projects = () => {
   return (
     <>
       <Container>
+        <Line className="fade20" />
         <Paragraph className="fade04">
           I aim to write elegant, interesting code. These are some of the
           projects I've worked on.
