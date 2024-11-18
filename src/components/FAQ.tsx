@@ -62,6 +62,14 @@ type Project = {
   description: React.ReactNode;
 };
 
+const Fairseq2: Project = {
+  title: "fairseq2",
+  skills: "Python, PyTorch, C++",
+  description:<div>
+    Implemented configurable functionality to use the latest preference optimization methods (DPO, SimPO, CPO, ORPO, etc.) for LLM alignment in Meta's popular open-source <InlineLink href="https://github.com/facebookresearch/fairseq2" target="_blank">fairseq2</InlineLink> toolkit using Python and PyTorch. fairseq2 is a sequence modeling toolkit that allows researchers and developers to train custom models for translation, summarization, language modeling, and other content generation tasks.
+  </div>
+}
+
 const WikiViz: Project = {
   title: "WikiViz",
   skills: "Java, JSoup, JUNG",
@@ -120,7 +128,8 @@ const DropdownItem: React.FC<{ info: Project }> = ({ info }) => {
 
 const FAQ: React.FC = () => {
   return (
-    <div className="fade12">
+    <div className="fade08">
+      <DropdownItem info={Fairseq2} />
       <DropdownItem info={WikiViz} />
       <DropdownItem info={FakeGoogle} />
       <DropdownItem info={SciFact} />
