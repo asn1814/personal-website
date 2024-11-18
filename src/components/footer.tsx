@@ -1,10 +1,10 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import styled from 'styled-components';
-import { THEME_COLORS } from '../utils/theme.ts';
-import { INTERNAL_LINKS } from '../utils/links.ts';
-import { Contact } from './contact.tsx';
-import pfp from '../assets/pfp.jpeg';
+import React from "react";
+import { useState, useEffect } from "react";
+import styled from "styled-components";
+import { THEME_COLORS } from "../utils/theme.ts";
+import { INTERNAL_LINKS } from "../utils/links.ts";
+import { Contact } from "./contact.tsx";
+import pfp from "../assets/pfp.jpeg";
 
 const Container = styled.div`
   position: relative;
@@ -59,60 +59,57 @@ const HeadshotImage = styled.img`
   }*/
 `;
 
-const Headshot = ({ imageSource }: { imageSource: string; }) => {
+const Headshot = ({ imageSource }: { imageSource: string }) => {
   return (
     <HeadshotContainer>
       <a href={INTERNAL_LINKS.HOME} target="_self">
-        <HeadshotImage
-          src={imageSource}
-          loading="eager"
-        ></HeadshotImage>
+        <HeadshotImage src={imageSource} loading="eager"></HeadshotImage>
       </a>
     </HeadshotContainer>
   );
 };
 
 export const Footer = () => {
+  const r_text = [
+    "I can even deploy a website!",
+    "Alive 2007 - Daft Punk",
+    "Thing of Gold - Snarky Puppy",
+    "Professional Astrologist",
+    "Directive Executor of HubDacks",
+    "This random quotes thing used to be so buggy",
+    "Hi Lockheed 👉👈🥺",
+    "Still waiting for Masa to invest in me",
+    "Programmer? I barely know 'er!",
+    "Oh to be a mouse in Redwall",
+    '"The shadow lies upon his tomb / In Moria, in Khazad-dûm."',
+    '"Fear is the mind-killer."',
+    "Two Crabs, Ryūryūkyo Shinsai",
+    "Shaco main",
+    "Book Yen, game Triss",
+    "Roll initiative!",
+    "You just lost the game",
+    "Streetwear? Right there, silly",
+  ];
 
   const Tagline = () => {
     const [text, setText] = useState("");
-  
-    useEffect(() => {
-      let r_text = ['I can even deploy a website!',
-        'Alive 2007 - Daft Punk',
-        'Thing of Gold - Snarky Puppy'];
 
-      setText(r_text[Math.floor(r_text.length * Math.random())]);
-    },[])
+    useEffect(() => {
+      setText(r_text[Math.floor(3 * Math.random())]);
+    }, []);
 
     const randText = (event) => {
-      let r_text = ['Professional Astrologist',
-        'Directive Executor of HubDacks',
-        'This random quotes thing used to be so buggy',
-        'Hi Lockheed 👉👈🥺',
-        'Still waiting for Masa to invest in me',
-        'Programmer? I barely know \'er!',
-        'Oh to be a mouse in Redwall',
-        '"The shadow lies upon his tomb / In Moria, in Khazad-dûm."',
-        '"Fear is the mind-killer."',
-        'Two Crabs, Ryūryūkyo Shinsai',
-        'Shaco main',
-        'Book Yen, game Triss',
-        'Roll initiative!',
-        'You just lost the game',
-        'Streetwear? Right there, silly'];
-
       var i = Math.floor(r_text.length * Math.random());
-      if (text !== r_text[i])
-        setText(r_text[i]);
-      else 
-        setText(r_text[(i + 1) % r_text.length]);
+      if (text !== r_text[i]) setText(r_text[i]);
+      else setText(r_text[(i + 1) % r_text.length]);
     };
 
     return (
-      <div onClick={randText}><Text className="fade40">{text}</Text></div>
+      <div onClick={randText}>
+        <Text className="fade40">{text}</Text>
+      </div>
     );
-  }
+  };
 
   return (
     <>
