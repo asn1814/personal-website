@@ -16,6 +16,8 @@ const Container = styled.div`
   justify-content: center; /* space-between */
   align-items: center;
   min-height: 100vh;
+  min-height: 100svh;
+  overflow: auto;
   font-family: "Times New Roman", serif;
   color: ${THEME_COLORS.brandWhite};
 

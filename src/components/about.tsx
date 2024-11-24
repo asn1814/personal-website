@@ -23,6 +23,8 @@ const Container = styled.div`
 
 const Line = styled.div`
   width: 100%;
+  position: sticky;
+  top: 0;
   border-top: solid 0.5px;
   margin: 0px;
   padding: 0px;
