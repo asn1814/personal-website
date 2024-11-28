@@ -1,18 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { THEME_COLORS } from '../utils/theme.ts';
+import { THEME_COLORS, InlineLink } from '../utils/theme.ts';
 import { INTERNAL_LINKS } from '../utils/links.ts';
-
-const InlineLink = styled.a`
-  color: ${THEME_COLORS.brandWhite};
-  text-decoration: underline transparent 1px;
-  background-color: transparent;
-  font-style: italic;
-  transition: text-decoration 0.3s ease;
-  &:hover {
-    text-decoration: underline solid 1px;
-  }
-`;
 
 const FancyLink = styled.a`
   color: ${THEME_COLORS.brandWhite};

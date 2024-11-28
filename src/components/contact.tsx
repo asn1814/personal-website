@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { THEME_COLORS } from '../utils/theme.ts';
+import { InlineLink as IL } from '../utils/theme.ts';
 import { EXTERNAL_LINKS, INTERNAL_LINKS } from '../utils/links.ts';
 
 const Container = styled.div`
@@ -15,17 +15,11 @@ const Container = styled.div`
   font-size: 12px;
 `;
 
-const InlineLink = styled.a`
-  color: ${THEME_COLORS.brandWhite};
-  background-color: transparent;
-  text-decoration: underline transparent 1px;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
-  &:hover {
-    text-decoration: underline solid 1px;
-  }
+const InlineLink = styled(IL)`
   width: 100%;
   max-width: 50px;
   text-align: center;
+  font-style: normal;
 `;
 
 export const Contact = ({ classname }: { classname: string; }) => {

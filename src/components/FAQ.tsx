@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { THEME_COLORS } from '../utils/theme.ts';
+import { THEME_COLORS, InlineLink } from '../utils/theme.ts';
 
 const Dropdown = styled.div`
   margin: 10px;
@@ -42,17 +42,6 @@ const ArrowUp = styled.div`
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-bottom: 8px solid ${THEME_COLORS.brandWhite};
-`;
-
-const InlineLink = styled.a`
-  color: ${THEME_COLORS.brandWhite};
-  text-decoration: underline transparent 1px;
-  background-color: transparent;
-  font-style: italic;
-  transition: text-decoration 0.3s ease;
-  &:hover {
-    text-decoration: underline solid 1px;
-  }
 `;
 
 // types.ts

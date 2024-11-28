@@ -1,7 +1,7 @@
 import React from 'react';
 import { Footer } from '../components/footer.tsx';
 import styled from 'styled-components';
-import { THEME_COLORS } from '../utils/theme.ts';
+import { THEME_COLORS, InlineLink as IL } from '../utils/theme.ts';
 import { INTERNAL_LINKS } from '../utils/links.ts';
 
 const Container = styled.div`
@@ -22,16 +22,8 @@ const Container = styled.div`
   font-size: 20px;
 `;
 
-const InlineLink = styled.a`
-  color: ${THEME_COLORS.brandWhite};
-  text-decoration: underline transparent 1px;
-  background-color: transparent;
-  font-style: italic;
-  transition: text-decoration 0.3s ease;
+const InlineLink = styled(IL)`
   font-size: 16px;
-  &:hover {
-    text-decoration: underline solid 1px;
-  }
 `;
 
 const PageHome: React.FC = props => {

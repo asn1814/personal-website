@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { THEME_COLORS } from "../utils/theme.ts";
+import { THEME_COLORS, InlineLink } from "../utils/theme.ts";
 import FAQ from "./FAQ.tsx";
 import { EXTERNAL_LINKS } from "../utils/links.ts";
 
@@ -31,17 +31,6 @@ const Line = styled.div`
 
 const Paragraph = styled.p`
   font-size: 16px;
-`;
-
-const InlineLink = styled.a`
-  color: ${THEME_COLORS.brandWhite};
-  text-decoration: underline transparent 1px;
-  background-color: transparent;
-  font-style: italic;
-  transition: text-decoration 0.3s ease;
-  &:hover {
-    text-decoration: underline solid 1px;
-  }
 `;
 
 export const Projects = () => {
