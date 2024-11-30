@@ -1,52 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { THEME_COLORS, InlineLink } from '../utils/theme.ts';
+import { THEME_COLORS, InlineLink, Paragraph } from '../utils/theme.ts';
 import { INTERNAL_LINKS } from '../utils/links.ts';
 
-const FancyLink = styled.a`
-  color: ${THEME_COLORS.brandWhite};
+const FancyLink = styled(InlineLink)`
   text-decoration: underline solid 1px ${THEME_COLORS.brandWhite}50;
-  border-radius: 15px;
-  font-style: italic;
-  transition: all 0.3s ease;
-  width: fit-content;
-  &:hover {
-    text-decoration: underline solid 1px ${THEME_COLORS.brandWhite};
-  }
-`;
-
-const Paragraph = styled.p`
-  font-size: 16px;
-  /*transition: font-size 0.4s ease-in-out;
-  &:hover {
-    font-size: 20px;
-  }*/
-
-  /*@keyframes attention {
-    10% {
-      background-color: transparent;
-    }
-    12.5% {
-      background-color: ${THEME_COLORS.brandMid};
-    }
-    15% {
-      background-color: transparent;
-    }
-    17.5% {
-      background-color: ${THEME_COLORS.brandMid};
-    }
-    20% {
-      background-color: transparent;
-    }
-  }
-
-  .first {
-    animation: attention 10s 1s infinite;
-  }
-
-  .second {
-    animation: attention 10s 3s infinite;
-  }*/
 `;
 
 export const Content = () => {

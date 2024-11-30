@@ -17,3 +17,17 @@ export const InlineLink = styled.a`
     text-decoration: underline solid 1px;
   }
 `;
+
+export const Line = styled.div`
+  width: 100%;
+  position: sticky;
+  top: 0;
+  margin: 0px;
+  padding: 0px;
+  border-top: solid 0.5px;
+  border-color: ${THEME_COLORS.brandWhite}36;
+`
+
+export const Paragraph = styled.p`
+  font-size: 16px;
+`;

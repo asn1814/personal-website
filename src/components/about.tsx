@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { THEME_COLORS } from '../utils/theme.ts';
+import { THEME_COLORS, InlineLink, Line, Paragraph } from '../utils/theme.ts';
 import dubteam from '../assets/dubteam.jpg';
 import baby from '../assets/baby.jpeg';
 import camping from '../assets/camping.jpg';
@@ -19,32 +19,6 @@ const Container = styled.div`
   margin: 20px;
   overflow: auto;
   max-height: 57vh;
-`;
-
-const Line = styled.div`
-  width: 100%;
-  position: sticky;
-  top: 0;
-  border-top: solid 0.5px;
-  margin: 0px;
-  padding: 0px;
-  border-top: solid 0.5px;
-  border-color: ${THEME_COLORS.brandWhite}36;
-`
-
-const InlineLink = styled.a`
-  color: ${THEME_COLORS.brandWhite};
-  text-decoration: underline transparent 1px;
-  background-color: transparent;
-  font-style: italic;
-  transition: text-decoration 0.3s ease;
-  &:hover {
-    text-decoration: underline solid 1px;
-  }
-`;
-
-const Paragraph = styled.p`
-  font-size: 16px;
 `;
 
 const ImageContainer = styled.div`

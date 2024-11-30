@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { THEME_COLORS, InlineLink } from "../utils/theme.ts";
+import { THEME_COLORS, InlineLink, Line, Paragraph } from "../utils/theme.ts";
 import FAQ from "./FAQ.tsx";
 import { EXTERNAL_LINKS } from "../utils/links.ts";
 
@@ -17,20 +17,6 @@ const Container = styled.div`
   margin: 20px;
   overflow: auto;
   max-height: 57vh;
-`;
-
-const Line = styled.div`
-  width: 100%;
-  position: sticky;
-  top: 0;
-  margin: 0px;
-  padding: 0px;
-  border-top: solid 0.5px;
-  border-color: ${THEME_COLORS.brandWhite}36;
-`
-
-const Paragraph = styled.p`
-  font-size: 16px;
 `;
 
 export const Projects = () => {
