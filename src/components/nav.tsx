@@ -26,6 +26,9 @@ const StyledNavLink = styled(NavLink)`
   width: 100%;
   max-width: 100px;
   text-align: center;
+  -webkit-text-decoration-line: underline;
+  -webkit-text-decoration-color: ${props => (props.className === 'selected' ? '#FAF0E690' : 'transparent')};
+  -webkit-text-decoration-thickness: 1px;
   text-decoration: ${props => (props.className === 'selected' ? 'underline solid 1px #FAF0E690' : 'underline transparent 1px')};
 `;
 

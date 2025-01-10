@@ -9,11 +9,15 @@ export const THEME_COLORS = {
 
 export const InlineLink = styled.a`
   color: ${THEME_COLORS.brandWhite};
+  -webkit-text-decoration-line: underline;
+  -webkit-text-decoration-color: transparent;
+  -webkit-text-decoration-thickness: 1px;
   text-decoration: underline transparent 1px;
   background-color: transparent;
   font-style: italic;
   transition: text-decoration 0.3s ease;
   &:hover {
+    -webkit-text-decoration-color: ${THEME_COLORS.brandWhite};
     text-decoration: underline solid 1px;
   }
 `;

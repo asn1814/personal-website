@@ -4,6 +4,9 @@ import { THEME_COLORS, InlineLink, Paragraph } from '../utils/theme.ts';
 import { INTERNAL_LINKS } from '../utils/links.ts';
 
 const FancyLink = styled(InlineLink)`
+  -webkit-text-decoration-line: underline;
+  -webkit-text-decoration-color: ${THEME_COLORS.brandWhite}50;
+  -webkit-text-decoration-thickness: 1px;
   text-decoration: underline solid 1px ${THEME_COLORS.brandWhite}50;
 `;
 
