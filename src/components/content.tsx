@@ -19,11 +19,11 @@ export const Content = () => {
           Software Engineer Intern at <InlineLink href="https://about.meta.com" target="_blank">Meta</InlineLink>. 
         </Paragraph>
         <Paragraph className="fade08">
-          Pursuing a Bachelors in Computer Science with a Minor in Math at the University of Washington.
+          Pursuing a combined Bachelors/Masters in Computer Science at the University of Washington.
           Class of '26.
         </Paragraph>
         <Paragraph className="fade12">
-          I love building, eating, traveling, camping, and playing guitar.
+          I love building, eating, traveling, camping, and playing guitar. If there's anything I can help you out with, don't hesitate to reach me by email!
         </Paragraph>
         <Paragraph className="fade16">
           <FancyLink href={INTERNAL_LINKS.PROJECTS} target="_self" className="first">View my projects</FancyLink>.

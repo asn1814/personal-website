@@ -93,18 +93,17 @@ export const About = () => {
           I picked up programming in middle school to learn alongside <InlineLink href="https://www.chess.com/member/asn1814" target="_blank">chess</InlineLink> and haven't looked back. 
         </Paragraph>
         <Paragraph className="fade20">
-          I was a wilderness survival instructor with <InlineLink href="https://post84.org" target="_blank">POST84</InlineLink>, teaching tarp shelters, firestarting, and orienteering.
-          I began working on their Executive Committee and managed logistics and finance.
+          I was a wilderness survival instructor with <InlineLink href="https://post84.org" target="_blank">POST84</InlineLink>.
         </Paragraph>
         <Paragraph className="fade20">
-          At the University of Washington I began working for <InlineLink href="https://www.dubhacks.co" target="_blank">DubHacks</InlineLink>. 
-          Now I direct the program and lead our tech stack development. 
-          Our team hosts the largest hackathon in the PNW. 
-          Our internal incubator DubHacks Next cultivates the very best of Seattle's young tech talent.
+          At the University of Washington I became the Executive Director of <InlineLink href="https://www.dubhacks.co" target="_blank">DubHacks</InlineLink>. 
+          Our team hosts the largest hackathon in the PNW and our accelerator DubHacks Next cultivates the best of Seattle's young entrepreneurs.
+          Running the 2024 hackathon was the highlight of my time at the Allen School. 
         </Paragraph>
         <Paragraph className="fade20">
-          I love traveling and am hoping to check Antarctica off my list soon. 
-          I'm a classically trained clarinetist, but now I'm working to learn guitar and see as many concerts as possible. 
+          I also had the chance to intern at Meta FAIR, where I did research on preference optimization and PEFT for LLM reasoning, alignment, and memory.
+        </Paragraph>
+        <Paragraph className="fade20">
           If you have any good food recommendations in Seattle, email me - I love to eat!
         </Paragraph>
       </Container>

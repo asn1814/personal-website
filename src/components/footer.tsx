@@ -81,7 +81,7 @@ export const Footer = () => {
     "Still waiting for Masa to invest in me",
     "Programmer? I barely know 'er!",
     "Oh to be a mouse in Redwall",
-    '"The shadow lies upon his tomb / In Moria, in Khazad-dûm."',
+    '"But still the sunken stars appear / In dark and windless Mirrormere"',
     '"Fear is the mind-killer."',
     "Two Crabs, Ryūryūkyo Shinsai",
     "Shaco main",
