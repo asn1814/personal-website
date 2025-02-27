@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { THEME_COLORS, InlineLink, Line, Paragraph } from "../utils/theme.ts";
-import FAQ from "./FAQ.tsx";
+import ProjectsList from "./projectsList.tsx";
 import { EXTERNAL_LINKS } from "../utils/links.ts";
 
 const Container = styled.div`
@@ -28,7 +28,7 @@ export const Projects = () => {
           I aim to write elegant, interesting code. These are some of the
           projects I've worked on.
         </Paragraph>
-        <FAQ></FAQ>
+        <ProjectsList></ProjectsList>
         <Paragraph className="fade12">
           To see everything else I'm doing, check out my{" "}
           <InlineLink href={EXTERNAL_LINKS.GITHUB} target="_blank">

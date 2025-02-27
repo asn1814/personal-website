@@ -52,7 +52,7 @@ type Project = {
 };
 
 const Fairseq2: Project = {
-  title: "fairseq2",
+  title: "fairseq2 at Meta FAIR",
   skills: "Python, PyTorch, C++",
   description:<div>
     Implemented configurable functionality to use the latest preference optimization methods (DPO, SimPO, CPO, ORPO, etc.) for LLM alignment in Meta's popular open-source <InlineLink href="https://github.com/facebookresearch/fairseq2" target="_blank">fairseq2</InlineLink> toolkit using Python and PyTorch. fairseq2 is a sequence modeling toolkit that allows researchers and developers to train custom models for translation, summarization, language modeling, and other content generation tasks.
@@ -68,10 +68,10 @@ const WikiViz: Project = {
 }
 
 const FakeGoogle: Project = {
-  title: "Webserver Search Engine",
-  skills: "C, C++, HTTP, TCP/IP, POSIX, Unix/Linux, DNS protocols",
+  title: "File Search Engine",
+  skills: "C, C++, HTTP, TCP/IP, POSIX, Unix/Linux, DNS",
   description: <div>
-    Built a complete webserver using C and C++ that serves a webpage interface, accepts client search requests, finds relevant documents and webpages in its index, then serves a response over the internet. Wrote a tool to scan files into the server index.
+    Built a complete webserver using C and C++ that serves a webpage interface, accepts client search requests, finds relevant documents and webpages in its index, then serves a response. Includes a tool to scan files into the server index.
   </div>
 }
 
@@ -87,7 +87,7 @@ const CampusPaths: Project = {
   title: "Campus Paths",
   skills: "Java, Typescript, JSON, GSON, React, HTML",
   description: <div>
-    Built a webpage using React that implements Dijkstra’s algorithm to find the shortest path between locations on campus. Computation is run serverside and GSON is used to send the path to the webpage.
+    Built a webpage using React that implements Dijkstra&#39;s algorithm to find the shortest path between locations on UW&#39;s campus. Computation is run on a Java server and returned with GSON.
   </div>
 }
 
