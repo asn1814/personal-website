@@ -20,6 +20,10 @@ const Container = styled.div`
   overflow: auto;
   font-family: "Times New Roman", serif;
   color: ${THEME_COLORS.brandWhite};
+  ::selection {
+    color: ${THEME_COLORS.brandWhite};
+    background: ${THEME_COLORS.brandMid};
+  }
 
   @keyframes fade-in {
     50% {
