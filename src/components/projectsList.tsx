@@ -59,6 +59,22 @@ const Fairseq2: Project = {
   </div>
 }
 
+const ChessBot: Project = {
+  title: "Quiescence Search for Chess",
+  skills: "Python",
+  description:<div>
+    Built a basic chess bot with minimax and alpha-beta pruning and memoized game states. Tested several variations of Don Beal's Generalized Quiescence Search algorithm, resulting in 3x runtime speedup while searching 5 plies deeper. Paper and code available <InlineLink href="https://github.com/asn1814/chessbot573/blob/main/CSE573_QuiescenceSearchForChess_Nakamoto.pdf" target="_blank">here</InlineLink>.
+  </div>
+}
+
+const HealthyBrain: Project = {
+  title: "HealthyBrain (Hackathon Winner)",
+  skills: "React, Vite, Javascript, Ollama",
+  description:<div>
+    Won 3rd place overall at DubHacks Next's 8VC 4-hour hackathon. Drawing intelligently from your personal calendar (Google Calendar, Apple Calendar, etc.), HealthyBrain is a AI diary application that intelligently asks about your day to minimize bookkeeping and maximize reflection. It uses on-device Llama for privacy and has automated mental health guardrails. Check out our <InlineLink href="https://www.loom.com/share/f64d902231b042ab82fa04e76c24ea16" target="_blank">demo video</InlineLink> or our <InlineLink href="https://github.com/randofan/healthybrain" target="_blank">code</InlineLink>.
+  </div>
+}
+
 const WikiViz: Project = {
   title: "WikiViz",
   skills: "Java, JSoup, JUNG",
@@ -119,7 +135,9 @@ const FAQ: React.FC = () => {
   return (
     <div className="fade08">
       <DropdownItem info={Fairseq2} />
+      <DropdownItem info={HealthyBrain} />
       <DropdownItem info={WikiViz} />
+      <DropdownItem info={ChessBot} />
       <DropdownItem info={FakeGoogle} />
       <DropdownItem info={SciFact} />
       <DropdownItem info={CampusPaths} />

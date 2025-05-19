@@ -16,7 +16,6 @@ const Container = styled.div`
   color: ${THEME_COLORS.brandWhite};
   margin: 20px;
   overflow: auto;
-  max-height: 57vh;
 `;
 
 export const Projects = () => {
