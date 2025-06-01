@@ -16,16 +16,17 @@ export const Content = () => {
         <Paragraph className="fade04">
           Executive Director at <InlineLink href="https://www.dubhacks.co" target="_blank">DubHacks</InlineLink>. 
           Research Assistant at the UW Allen School <InlineLink href="https://netlab.cs.washington.edu/" target="_blank">Mobile Intelligence Lab</InlineLink>.
-          Software Engineer Intern at <InlineLink href="https://about.meta.com" target="_blank">Meta</InlineLink>. 
+          Software Engineer Intern at Meta FAIR. 
+          Software Engineer Intern at Google DeepMind. 
         </Paragraph>
-        <Paragraph className="fade08">
+        {/*<Paragraph className="fade08">
           Pursuing a combined Bachelors/Masters in Computer Science at the University of Washington.
           Class of '26.
         </Paragraph>
         <Paragraph className="fade12">
           I love building, eating, traveling, camping, and playing guitar. If there's anything I can help you out with, don't hesitate to reach me by email!
-        </Paragraph>
-        <Paragraph className="fade16">
+        </Paragraph>*/}
+        <Paragraph className="fade12">
           <FancyLink href={INTERNAL_LINKS.PROJECTS} target="_self" className="first">View my projects</FancyLink>.
         </Paragraph>
         <Paragraph className="fade20">
