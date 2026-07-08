@@ -24,6 +24,35 @@ export const Projects = () => {
       <Container>
         <Line className="fade20" />
         <Paragraph className="fade04">
+          My experience is focused on small-team, startup-speed engineering that
+          requires deep interaction with leading research teams.
+          <br />
+          <br />
+          Right now, I'm at Google DeepMind. I work on
+          <ul>
+            <li>Gemini's harness and orchestration plane.</li>
+            <li>Gemini's tool use and agentic tasks.</li>
+            <li>Gemini's integration with connected apps and services.</li>
+          </ul>
+          My previous work on a reseach team at Meta FAIR involved
+          <ul>
+            <li>
+              research on SOTA preference optimization and alignment techniques.
+            </li>
+            <li>building brand new distributed training/inference pipelines for researchers.</li>
+          </ul>
+        </Paragraph>
+      </Container>
+    </>
+  );
+};
+
+export const OldProjects = () => {
+  return (
+    <>
+      <Container>
+        <Line className="fade20" />
+        <Paragraph className="fade04">
           I aim to write elegant, interesting code. These are some of the
           projects I've worked on.
         </Paragraph>

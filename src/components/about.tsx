@@ -47,7 +47,7 @@ const Image = styled.img`
   vertical-align: middle;
   transition: max-height 0.2s ease-in-out;
   &:hover {
-    max-height: 400px;
+    // max-height: 400px;
   }
 `;
 
@@ -104,7 +104,7 @@ export const About = () => {
           I also had the chance to intern at Meta FAIR, where I did research on preference optimization and PEFT for LLM reasoning, alignment, and memory.
         </Paragraph>
         <Paragraph className="fade20">
-          If you have any good food recommendations in Seattle, email me - I love to eat!
+          If you have any good food recommendations in Seattle or the Bay, email me - I love to eat!
         </Paragraph>
       </Container>
     </>
